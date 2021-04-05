@@ -1,0 +1,87 @@
+.upload{
+margin-top:10px;
+width:40%;
+
+}
+
+.inputfile{
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.submit{
+        width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: orange;
+    display: inline-block;
+    width:30%;
+    max-width:70%;
+    corner-radius:20px;
+}
+
+
+.submit + label {
+    font-size: 1.25em;
+    font-weight: 400;
+    color: white;
+    background-color: orange;
+    display: inline-block;
+}
+
+
+.inputfile + label {
+	cursor: pointer; /* "hand" cursor */
+}
+
+#onebox{
+    width: auto;
+    height: auto;
+    display:inline-block;
+  
+}
+
+textarea{
+  position: relative;
+  display: block;
+  margin : 0 auto;
+  padding-left:30px;
+  border-color:white;
+  border-width:1px;
+  background-color:white;
+  color:white;
+  width:75%;
+  padding-left:10px;
+  padding-top:10px;
+  height:125px;
+}
+
+input[type="text"]{
+  position: relative;
+  display: block;
+  margin : 0 auto;
+  border-color:white;
+  border-width:1px;
+  background-color:white;
+  color:white;
+  width:75%;
+  height:15%;
+  padding:20px 50px 20px 10px;
+  margin-bottom:10px;
+}
+
+
+
