@@ -1,8 +1,8 @@
 import React from 'react';
-import divya from 'C:/Users/leona/Downloads/single-syllabus/src/pictures/divya.jpg';
-import leo from 'C:/Users/leona/Downloads/single-syllabus/src/pictures/leo.jpg';
-import syed from 'C:/Users/leona/Downloads/single-syllabus/src/pictures/syed.jpg';
-import saaketh from 'C:/Users/leona/Downloads/single-syllabus/src/pictures/saaketh.jpg';
+import divya from '../pictures/divya.jpg';
+import leo from '../pictures/leo.jpg';
+import syed from '../pictures/syed.jpg';
+import saaketh from '../pictures/saaketh.jpg';
 
 const About = () => {
 
@@ -11,7 +11,7 @@ const About = () => {
         
   <div className="jumbotron jumbotron-fluid about-top">
   <div className="container about-top-text">
-    <h1 className="display-4" style={{textAlign:"center"}}><strong>About Us</strong></h1>
+    <h1 className="display-4" style={{textAlign:"center",color:"white"}}><strong>About Us</strong></h1>
     <p className="lead">The Developers are a team of 4 students from The University of Texas at Dallas. We developed this application
     for students who want to be organized and stay on top of things when it comes to className information. To know more about the team
     members hover over their names below.</p>

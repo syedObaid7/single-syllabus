@@ -12,7 +12,7 @@ const Help = () => {
         marginLeft: "10%",
       }}
     >
-      <h1 class="display-4">How does Single Syllabus work?</h1>
+      <h1 class="display-4" style={{color:"white"}}>How does Single Syllabus work?</h1>
       <hr class="my-4" />
       <h4>Simple upload.</h4>
       <p>

@@ -3,7 +3,7 @@ import React from "react";
 const Upload = () => {
   return (
 
-    <div class="container"  >
+    <div class="container uploadbackground">
       <div class="row">
         <div class="col text-center align-middle">
           <h1 style={{ textAlign: 'center' }}>Welcome to Single Syllabus</h1>
