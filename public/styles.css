@@ -85,6 +85,9 @@ nav{
   display: inline-block;
 }
 
+.members{
+  text-align:center;
+}
 textarea {
   position: relative;
   display: block;
