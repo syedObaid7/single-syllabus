@@ -1,7 +1,9 @@
 from operator import itemgetter
 import fitz
 import json
-
+import re
+from pprint import pprint
+import os
 
 def fonts(doc, granularity=False):
     """Extracts fonts and their usage in PDF documents.
@@ -129,7 +131,7 @@ def headers_para(doc, size_tag):
 
 def main():
 
-    document = 'C:/Users/leona/Desktop/SingleSyllabus/SE.pdf'
+    document = 'SE.pdf'
     doc = fitz.open(document)
 
     font_counts, styles = fonts(doc, granularity=False)
@@ -137,9 +139,43 @@ def main():
     size_tag = font_tags(font_counts, styles)
 
     elements = headers_para(doc, size_tag)
-    with open("C:/Users/leona/Desktop/SingleSyllabus/out.json", 'w') as json_out:
-        json.dump(elements, json_out)
 
+
+    ###CODE ADDED BY LEONARDO ACIOLI ------------------------------------------
+    #finds headers, cleans them, and outputs to a file
+    listimportant = []
+    listclean = []
+
+    h2 = "<h2>"
+    h3 = "<h3>"
+
+    for element in elements:
+        if h2 in element:
+            listimportant.append(element)
+        if h3 in element:
+            listimportant.append(element)
+
+    for string in listimportant:
+        if h2 in string:
+            string = string.replace("<h2>","")
+            string = string.replace("|","")
+            listclean.append(string)
+        else:
+            string = string.replace("<h3>","")
+            string = string.replace("|","")
+            listclean.append(string)
+
+    pprint(listclean)
+
+    sourceFile = open('out.json', 'w')
+    print("Class: " + os.path.basename(document),file=sourceFile)
+    print("\n",file=sourceFile)
+    with open('out.json', 'wt') as out:
+        pprint(listclean, stream=out)
+    sourceFile.close()  
+    out.close()
+
+###CODE ADDED BY LEONARDO ACIOLI ------------------------------------------
 
 if __name__ == '__main__':
     main()

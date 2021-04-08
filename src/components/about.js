@@ -28,7 +28,6 @@ const About = () => {
       <p className="card-text">From: Recife, Brazil​</p>
        <p className="card-text">Interest: Web Development</p>
         <p className="card-text">Position: Software Engineer intern​</p>
-        <p className="card-text">Fun Fact: Has done Ballet for 6 years​</p>
     </div>
      <div className="card-footer">Fun Fact: Has done Ballet for 6 years​</div>
 </div>
