@@ -5,7 +5,7 @@ const Contact = () => {
     <div
       class="jumbotron jumbotron-fluid"
       style={{
-        backgroundColor: "orange",
+        backgroundColor: "darkorange",
         borderRadius: "40px",
         width: "75%",
         alignContent: "center",

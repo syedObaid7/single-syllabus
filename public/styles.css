@@ -1,80 +1,122 @@
-.upload {
-  margin-top: 10px;
-  width: 40%;
-}
-
-.inputfile {
-  width: 0.1px;
-  height: 0.1px;
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
-  z-index: -1;
-}
-
-.submit {
-  width: 0.1px;
-  height: 0.1px;
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
-  z-index: -1;
-}
-
-.inputfile + label {
-  font-size: 1.25em;
-  font-weight: 700;
-  color: white;
-  background-color: orange;
-  display: inline-block;
-  width: 30%;
-  max-width: 70%;
-  /* corner-radius: 20px; */
-}
-
-.submit + label {
-  font-size: 1.25em;
-  font-weight: 400;
-  color: white;
-  background-color: orange;
-  display: inline-block;
-}
-
-.inputfile + label {
-  cursor: pointer; /* "hand" cursor */
-}
-
-#onebox {
-  width: auto;
-  height: auto;
-  display: inline-block;
-}
-
-textarea {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  padding-left: 30px;
-  border-color: white;
-  border-width: 1px;
-  background-color: white;
-  color: white;
-  width: 75%;
-  padding-left: 10px;
-  padding-top: 10px;
-  height: 125px;
-}
-
-input[type="text"] {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  border-color: white;
-  border-width: 1px;
-  background-color: white;
-  color: white;
-  width: 75%;
-  height: 15%;
-  padding: 20px 50px 20px 10px;
-  margin-bottom: 10px;
-}
+.upload{
+  margin-top:10px;
+  width:40%;
+  
+  }
+  
+  .inputfile{
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .submit{
+          width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .inputfile + label {
+      font-size: 1.25em;
+      font-weight: 700;
+      color: white;
+      background-color: orange;
+      display: inline-block;
+      width:30%;
+      max-width:70%;
+      border-radius:20px;
+  }
+  
+  
+  .submit + label {
+      font-size: 1.25em;
+      font-weight: 400;
+      color: white;
+      background-color: orange;
+      display: inline-block;
+  }
+  
+  
+  .inputfile + label {
+    cursor: pointer; /* "hand" cursor */
+  }
+  
+  #onebox{
+      width: auto;
+      height: auto;
+      display:inline-block;
+    
+  }
+  
+  textarea{
+    position: relative;
+    display: block;
+    margin : 0 auto;
+    padding-left:30px;
+    border-color:white;
+    border-width:1px;
+    background-color:white;
+    color:white;
+    width:75%;
+    padding-left:10px;
+    padding-top:10px;
+    height:125px;
+  }
+  
+  input[type="text"]{
+    position: relative;
+    display: block;
+    margin : 0 auto;
+    border-color:white;
+    border-width:1px;
+    background-color:white;
+    color:white;
+    width:75%;
+    height:15%;
+    padding:20px 50px 20px 10px;
+    margin-bottom:10px;
+  }
+  
+  
+  .jumbotron{
+  background-color:darkorange;
+  color:white;
+  }
+  
+  .about-top{
+  border-radius:40px;
+  width:75%;
+  align-content:center;
+  margin-left:12.5%;
+  margin-top:2%;
+  height:20%;
+  }
+  
+  .members{
+  text-align:center;
+  }
+  
+  .about-top-text{
+  padding-left:2%;
+  padding-right:2%;
+  }
+  
+  .card-deck{
+  margin-top:2em;
+  margin-bottom:2em;
+  }
+  
+  .card{
+  border-color:darkorange;
+  }
+  
+  .card-footer{
+  color:white;
+  background-color:darkorange;
+  }
