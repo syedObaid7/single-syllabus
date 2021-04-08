@@ -5,6 +5,9 @@ import re
 from pprint import pprint
 import os
 
+#CITATION OF CODE:
+#LouisdeBruijn/Medium, (2020) pdf_retrieval.py.  https://github.com/LouisdeBruijn/Medium/blob/master/PDF%20retrieval/pdf_retrieval.py
+
 def fonts(doc, granularity=False):
     """Extracts fonts and their usage in PDF documents.
     :param doc: PDF document to iterate through
