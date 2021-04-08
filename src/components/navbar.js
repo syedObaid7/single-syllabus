@@ -26,45 +26,47 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <ul className="navbar-nav mr-auto">
-            <li className="nav-item">
-              <Link to="/classes" className="nav-link">
-                Classes
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/" className="nav-link">
-                Upload
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/user" className="nav-link">
-                User
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/contact" className="nav-link">
-                Contact
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/help" className="nav-link">
-                ?
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/about" className="nav-link">
-                About
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/signout" className="nav-link">
-                Sign Out
-              </Link>
-            </li>
-          </ul>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav mr-auto">
+              <li className="nav-item">
+                <Link to="/classes" className="nav-link">
+                  Classes
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/" className="nav-link">
+                  Upload
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/user" className="nav-link">
+                  User
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/contact" className="nav-link">
+                  Contact
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/help" className="nav-link">
+                  ?
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/about" className="nav-link">
+                  About
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/signout" className="nav-link">
+                  Sign Out
+                </Link>
+              </li>
+            </ul>
+          </div>
         </nav>
         <Switch>
           <Route path="/classes">

@@ -5,7 +5,7 @@ const Help = () => {
     <div
       class="jumbotron"
       style={{
-        background: "orange",
+        background: "darkorange",
         color: "white",
         marginTop: "1.5%",
         width: "80%",
