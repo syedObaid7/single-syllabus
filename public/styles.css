@@ -1,15 +1,10 @@
- h1{
-  color: black;
-  
-}
-nav{
+nav {
   margin-bottom: none;
 }
 .upload {
   margin-top: 10px;
   width: 40%;
 }
-
 
 .submit {
   opacity: 0;
@@ -40,35 +35,77 @@ nav{
   cursor: pointer; /* "hand" cursor */
 }
 
-.uploadbackground {
-  height: 100vh;
-  max-width: 100%;
+:root {
+  --color-primary: #ffd900;
+  --color-body: #1b191b;
+  --color-accent: white;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+}
+
+/* Backgrounds */
+
+.background {
+  height: 100%;
+  width: 100%;
+  z-index: -100;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  filter: blur(8px);
+}
+
+.background--upload {
   background: url("https://cpb-us-e2.wpmucdn.com/sites.utdallas.edu/dist/e/1154/files/2020/09/campus-mall-students-walking.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
-  z-index:-2;
-  overflow-x: hidden;overflow-y:hidden;
-  position:absolute;
-    bottom:0;
-    left:0;
 }
 
-.loginbackground {
-  height: 100vh;
-  max-width: 100%;
-  background: url("https://wallpaperaccess.com/full/1846921.jpg");
-  background-repeat: no-repeat;
+.background--login {
+  background: url("https://images.pexels.com/photos/965117/pexels-photo-965117.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-size: cover;
-  z-index:-2;
-  overflow-x: hidden;overflow-y:hidden;
-  position:absolute;
-    bottom:0;
-    left:0;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
 }
 
-.row-upload-area{
+/* Cards */
+
+.card {
+  border: none;
+  background-color: var(--color-accent);
+  width: 50%;
+  padding: 2.5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card--transparent {
+  opacity: 85%;
+}
+
+/* Buttons */
+
+button,
+.button {
+  text-transform: uppercase;
+  margin-right: 8px;
+}
+
+/* Typography */
+
+.title {
+  color: var(--color-accent);
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 10%;
+  padding: 10px;
+  text-align: center;
+}
+
+label {
+  font-weight: bold;
+}
+
+.row-upload-area {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -77,24 +114,24 @@ nav{
   min-height: 100vh;
 }
 
-.row-login-area{
-  width:50%;
-  margin-left:25%;
-  height:50%;
+.row-login-area {
+  width: 50%;
+  margin-left: 25%;
+  height: 50%;
 }
 
-.about-top{
+.about-top {
   background-color: darkorange;
-  color:white;
-  margin-top:2em;
-  border-radius:2em;
-  width:80%;
-  margin-left:10%;
+  color: white;
+  margin-top: 2em;
+  border-radius: 2em;
+  width: 80%;
+  margin-left: 10%;
 }
 
-.card-footer{
-  background-color:darkorange;
-  color:white;
+.card-footer {
+  background-color: darkorange;
+  color: white;
 }
 
 #onebox {
@@ -103,8 +140,8 @@ nav{
   display: inline-block;
 }
 
-.members{
-  text-align:center;
+.members {
+  text-align: center;
 }
 textarea {
   position: relative;
@@ -134,5 +171,3 @@ input[type="text"] {
   padding: 20px 50px 20px 10px;
   margin-bottom: 10px;
 }
-
-
