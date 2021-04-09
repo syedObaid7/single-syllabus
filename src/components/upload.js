@@ -13,11 +13,9 @@ const Upload = () => {
               type="file"
               name="file"
               id="file"
-              class="inputfile btn btn-primary btn-lg"
+              class="inputfile btn btn-warning btn-lg"
             />
-            <label for="file" class="btn btn-warning btn-lg" style={{width:"14em"}}>
-              + Upload Syllabi
-            </label>
+            
             <br />
             <br />
             <br />
