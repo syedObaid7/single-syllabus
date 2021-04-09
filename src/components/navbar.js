@@ -6,6 +6,7 @@ import About from "./about";
 import Contact from "./contact";
 import Help from "./help";
 import Empty from "./empty";
+import Login from "./login";
 
 const Navbar = () => {
   return (
@@ -37,7 +38,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/" className="nav-link">
+                <Link to="/upload" className="nav-link">
                   Upload
                 </Link>
               </li>
@@ -73,6 +74,9 @@ const Navbar = () => {
           <Route path="/classes">
             <Empty />
           </Route>
+          <Route path="/upload">
+            <Upload />
+          </Route>
           <Route path="/user">
             <Empty />
           </Route>
@@ -89,7 +93,7 @@ const Navbar = () => {
             <Empty />
           </Route>
           <Route path="/">
-            <Upload />
+            <Login />
           </Route>
         </Switch>
       </div>

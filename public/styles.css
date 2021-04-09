@@ -10,9 +10,6 @@ nav{
   width: 40%;
 }
 
-.inputfile {
-
-}
 
 .submit {
   opacity: 0;
@@ -46,11 +43,29 @@ nav{
 .uploadbackground {
   height: 100vh;
   max-width: 100%;
-  max-height: 100%;
   background: url("https://cpb-us-e2.wpmucdn.com/sites.utdallas.edu/dist/e/1154/files/2020/09/campus-mall-students-walking.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  z-index:-2;
+  overflow-x: hidden;overflow-y:hidden;
+  position:absolute;
+    bottom:0;
+    left:0;
+}
+
+.loginbackground {
+  height: 100vh;
+  max-width: 100%;
+  background: url("https://wallpaperaccess.com/full/1846921.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index:-2;
+  overflow-x: hidden;overflow-y:hidden;
+  position:absolute;
+    bottom:0;
+    left:0;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
 }
 
 .row-upload-area{
@@ -61,6 +76,13 @@ nav{
   text-align: center;
   min-height: 100vh;
 }
+
+.row-login-area{
+  width:50%;
+  margin-left:25%;
+  height:50%;
+}
+
 .about-top{
   background-color: darkorange;
   color:white;

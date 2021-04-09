@@ -33,7 +33,7 @@ const Help = () => {
       <p class="lead">
         <a
           class="btn btn-outline-light btn-lg"
-          href="contact.html"
+          href="./contact"
           role="button"
         >
           Contact us for more questions

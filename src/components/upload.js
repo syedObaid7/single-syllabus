@@ -2,8 +2,8 @@ import React from "react";
 
 const Upload = () => {
   return (
-
-    <div class="container uploadbackground">
+<div>
+    <div class="container uploadbackground"></div>
       <div class="row-upload-area">
           <h1 style={{ textAlign: 'center' ,color:"white", textShadow: "2px 2px 4px #000000"}}>Welcome to Single Syllabus</h1>
           <br />
