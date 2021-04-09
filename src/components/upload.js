@@ -4,9 +4,9 @@ const Upload = () => {
   return (
 
     <div class="container uploadbackground">
-      <div class="row">
+      <div class="row upload-area">
         <div class="col text-center align-middle">
-          <h1 style={{ textAlign: 'center' }}>Welcome to Single Syllabus</h1>
+          <h1 style={{ textAlign: 'center' ,color:"white", textShadow: "2px 2px 4px #000000"}}>Welcome to Single Syllabus</h1>
           <br />
           <br />
           <form action="/action_page.php">
@@ -16,10 +16,9 @@ const Upload = () => {
               id="file"
               class="inputfile btn btn-primary btn-lg"
             />
-            <label for="file" class="btn btn-warning btn-lg">
+            <label for="file" class="btn btn-warning btn-lg" style={{width:"60%"}}>
               + Upload Syllabi
             </label>
-            <br />
             <br />
             <br />
             <br />

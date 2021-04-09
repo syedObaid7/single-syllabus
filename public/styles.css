@@ -61,10 +61,16 @@ nav{
   background-size: cover;
   
   background-position: center;
- 
- 
 }
 
+.upload-area{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
 .about-top{
   background-color: darkorange;
   color:white;
