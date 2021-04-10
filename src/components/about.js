@@ -1,8 +1,8 @@
 import React from 'react';
-import divya from 'C:/Users/leona/Downloads/single-syllabus/src/pictures/divya.jpg';
-import leo from 'C:/Users/leona/Downloads/single-syllabus/src/pictures/leo.jpg';
-import syed from 'C:/Users/leona/Downloads/single-syllabus/src/pictures/syed.jpg';
-import saaketh from 'C:/Users/leona/Downloads/single-syllabus/src/pictures/saaketh.jpg';
+import divya from '../pictures/divya.jpg';
+import leo from '../pictures/leo.jpg';
+import syed from '../pictures/syed.jpg';
+import saaketh from '../pictures/saaketh.jpg';
 
 const About = () => {
 
@@ -22,7 +22,7 @@ const About = () => {
   
   <div className="card-deck">
   <div className="card">
-    <img className="card-img-top" src={leo}alt="Card image cap"></img>
+    <img className="card-img-top" src={leo}alt="Card cap"></img>
     <div className="card-body">
       <h5 className="card-title">Leonardo Acioli</h5>
       <p className="card-text">From: Recife, Brazil​</p>
@@ -32,7 +32,7 @@ const About = () => {
      <div className="card-footer">Fun Fact: Has done Ballet for 6 years​</div>
 </div>
   <div className="card">
-    <img className="card-img-top" src={divya} alt="Card image cap"></img>
+    <img className="card-img-top" src={divya} alt="Card cap"></img>
     <div className="card-body">
       <h5 className="card-title">Divya Karivaradasamy</h5>
       <p className="card-text">From: Cupertino, CA​</p>
@@ -42,7 +42,7 @@ const About = () => {
      <div className="card-footer">Fun Fact: Has played the violin for 12 years</div>
     </div>
   <div className="card">
-    <img className="card-img-top" src={saaketh} alt="Card image cap"></img>
+    <img className="card-img-top" src={saaketh} alt="Card cap"></img>
     <div className="card-body">
       <h5 className="card-title">Saaketh Jasti</h5>
       <p className="card-text">From: Irving, TX​</p>
@@ -52,7 +52,7 @@ const About = () => {
     <div className="card-footer">Fun Fact: Plays acoustic guitar</div>
 </div>
   <div className="card d-flex flex-nowrap">
-    <img className="card-img-top" src={syed} alt="Card image cap"></img>
+    <img className="card-img-top" src={syed} alt="Card cap"></img>
     <div className="card-body">
       <h5 className="card-title">Syed Quadri</h5>
       <p className="card-text">From: Dammam, Saudi Arabia​</p>

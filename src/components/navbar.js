@@ -5,6 +5,7 @@ import Upload from "./upload";
 import About from "./about";
 import Contact from "./contact";
 import Help from "./help";
+import Edit from "./edit"
 
 const Navbar = () => {
   return (
@@ -80,6 +81,9 @@ const Navbar = () => {
           </Route>
           <Route path="/help">
             <Help />
+          </Route>
+          <Route path="/edit">
+            <Edit />
           </Route>
           <Route path="/about">
             <About />
