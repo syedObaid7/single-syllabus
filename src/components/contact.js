@@ -27,7 +27,7 @@ const Contact = () => {
         </h4>
 
         <form
-          action="support@singlesyllabus.com"
+          action="mailto:support@singlesyllabus.com"
           method="post"
           enctype="text/plain"
         >

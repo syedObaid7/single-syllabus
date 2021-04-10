@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 div[editext="edit-container"] {
   padding: 15px;
   border-radius: 5px;
@@ -12,11 +13,17 @@ div[editext="edit-container"] {
   float: right;
 }
 
+=======
+nav {
+  margin-bottom: none;
+}
+>>>>>>> df0066b27f69b6fa9a9e05aa1365a93f83a2da25
 .upload {
   margin-top: 10px;
   width: 40%;
 }
 
+<<<<<<< HEAD
 .inputfile {
   width: 0.1px;
   height: 0.1px;
@@ -33,6 +40,12 @@ div[editext="edit-container"] {
   overflow: hidden;
   position: absolute;
   z-index: -1;
+=======
+.submit {
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+>>>>>>> df0066b27f69b6fa9a9e05aa1365a93f83a2da25
 }
 
 .inputfile + label {
@@ -43,7 +56,11 @@ div[editext="edit-container"] {
   display: inline-block;
   width: 30%;
   max-width: 70%;
+<<<<<<< HEAD
   border-radius: 20px;
+=======
+  /* corner-radius: 20px; */
+>>>>>>> df0066b27f69b6fa9a9e05aa1365a93f83a2da25
 }
 
 .submit + label {
@@ -58,12 +75,120 @@ div[editext="edit-container"] {
   cursor: pointer; /* "hand" cursor */
 }
 
+<<<<<<< HEAD
+=======
+:root {
+  --color-primary: #ffd900;
+  --color-body: #1b191b;
+  --color-accent: white;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+}
+
+/* Backgrounds */
+
+.background {
+  height: 100%;
+  width: 100%;
+  z-index: -100;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  filter: blur(8px);
+}
+
+.background--upload {
+  background: url("https://cpb-us-e2.wpmucdn.com/sites.utdallas.edu/dist/e/1154/files/2020/09/campus-mall-students-walking.jpg");
+  background-size: cover;
+}
+
+.background--login {
+  background: url("https://images.pexels.com/photos/965117/pexels-photo-965117.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+}
+
+/* Cards */
+
+.card {
+  border: none;
+  background-color: var(--color-accent);
+  width: 50%;
+  padding: 2.5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card--transparent {
+  opacity: 85%;
+}
+
+/* Buttons */
+
+button,
+.button {
+  text-transform: uppercase;
+  margin-right: 8px;
+}
+
+/* Typography */
+
+.title {
+  color: var(--color-accent);
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 10%;
+  padding: 10px;
+  text-align: center;
+}
+
+label {
+  font-weight: bold;
+}
+
+.row-upload-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.row-login-area {
+  width: 50%;
+  margin-left: 25%;
+  height: 50%;
+}
+
+.about-top {
+  background-color: darkorange;
+  color: white;
+  margin-top: 2em;
+  border-radius: 2em;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.card-footer {
+  background-color: darkorange;
+  color: white;
+}
+
+>>>>>>> df0066b27f69b6fa9a9e05aa1365a93f83a2da25
 #onebox {
   width: auto;
   height: auto;
   display: inline-block;
 }
 
+<<<<<<< HEAD
+=======
+.members {
+  text-align: center;
+}
+>>>>>>> df0066b27f69b6fa9a9e05aa1365a93f83a2da25
 textarea {
   position: relative;
   display: block;
@@ -72,7 +197,11 @@ textarea {
   border-color: white;
   border-width: 1px;
   background-color: white;
+<<<<<<< HEAD
   color: white;
+=======
+  color: black;
+>>>>>>> df0066b27f69b6fa9a9e05aa1365a93f83a2da25
   width: 75%;
   padding-left: 10px;
   padding-top: 10px;
@@ -86,12 +215,17 @@ input[type="text"] {
   border-color: white;
   border-width: 1px;
   background-color: white;
+<<<<<<< HEAD
   color: white;
+=======
+  color: black;
+>>>>>>> df0066b27f69b6fa9a9e05aa1365a93f83a2da25
   width: 75%;
   height: 15%;
   padding: 20px 50px 20px 10px;
   margin-bottom: 10px;
 }
+<<<<<<< HEAD
 
 .jumbotron {
   background-color: darkorange;
@@ -129,3 +263,5 @@ input[type="text"] {
   color: white;
   background-color: darkorange;
 }
+=======
+>>>>>>> df0066b27f69b6fa9a9e05aa1365a93f83a2da25

@@ -31,11 +31,7 @@ const Help = () => {
         then stored on the classes page for easy lookup.
       </p>
       <p class="lead">
-        <a
-          class="btn btn-outline-light btn-lg"
-          href="contact.html"
-          role="button"
-        >
+        <a class="btn btn-outline-light btn-lg" href="./contact" role="button">
           Contact us for more questions
         </a>
       </p>
