@@ -3,12 +3,9 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav
-      className="navbar sticky-top navbar-expand-lg navbar-light"
-      style={{ backgroundColor: "orange", color: "black" }}
-    >
+    <nav className="navbar sticky-top navbar-expand-lg navbar-light">
       <a className="navbar-brand" href="/">
-        <strong>Single Syllabus</strong>
+        Single Syllabus
       </a>
       <button
         className="navbar-toggler"
@@ -23,41 +20,43 @@ const Navbar = () => {
       </button>
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto">
-          <li className="nav-item">
-            <Link to="/classes" className="nav-link">
-              Classes
-            </Link>
+          <Link to="/upload" className="nav-link">
+            Upload
+          </Link>
+          <Link to="/classes" className="nav-link">
+            Classes
+          </Link>
+          <Link to="/user" className="nav-link">
+            User
+          </Link>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Help
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <Link to="/help" className="nav-link">
+                How To Use
+              </Link>
+              <Link to="/contact" className="nav-link">
+                Contact
+              </Link>
+              <div class="dropdown-divider"></div>
+              <Link to="/about" className="nav-link">
+                About
+              </Link>
+            </div>
           </li>
-          <li className="nav-item">
-            <Link to="/upload" className="nav-link">
-              Upload
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/user" className="nav-link">
-              User
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/contact" className="nav-link">
-              Contact
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/help" className="nav-link">
-              ?
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/about" className="nav-link">
-              About
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/signout" className="nav-link">
-              Sign Out
-            </Link>
-          </li>
+          <Link to="/signout" className="nav-link">
+            Sign Out
+          </Link>
         </ul>
       </div>
     </nav>

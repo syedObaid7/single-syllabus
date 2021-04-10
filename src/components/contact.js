@@ -2,80 +2,61 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div
-      class="jumbotron jumbotron-fluid"
-      style={{
-        backgroundColor: "darkorange",
-        borderRadius: "40px",
-        width: "75%",
-        alignContent: "center",
-        marginLeft: "12.5%",
-        marginTop: "1.5%",
-        height: "80%",
-        color: "white",
-      }}
-    >
-      <div class="container">
-        <h3 style={{ textAlign: "center" }}>
-          <strong>Contact Information</strong>
-        </h3>
-        <h4 style={{ textAlign: "center", padding: 10 }}>
-          <i class="far fa-envelope"></i>support@singlesyllabus.com
-        </h4>
-        <h4 style={{ textAlign: "center", padding: 10 }}>
-          <i class="fas fa-phone-alt"></i>(123)456-789
-        </h4>
-
-        <form
-          action="mailto:support@singlesyllabus.com"
-          method="post"
-          enctype="text/plain"
-        >
-          <div class="row">
-            <div class="col-md-6">
-              <input type="text" placeholder="Name" name="name" />
-              <br />
-              <input type="text" placeholder="E-mail" name="mail" />
-              <br />
-              <input type="text" placeholder="Phone" name="Phone" />
-              <br />
-            </div>
-
-            <div class="col-md-6">
-              <textarea
-                type="text"
-                placeholder="Message"
-                name="comment"
-                style={{ paddingBottom: "auto" }}
-              ></textarea>
-              <div class="row justify-content-center">
+    <div class="centered centered--vertical">
+      <div class="background background--upload"></div>
+      <div class="jumbotron card--transparent" style={{ width: "80%" }}>
+        <div>
+          <h1 class="display-4">Contact Us.</h1>
+          <h3 style={{ padding: 10 }}>
+            <i class="far fa-envelope"></i>support@singlesyllabus.com
+          </h3>
+          <h3 style={{ padding: 10 }}>
+            <i class="fas fa-phone-alt"></i>(123)456-789
+          </h3>
+          <hr class="my-4" />
+          <form
+            action="mailto:support@singlesyllabus.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <div class="row">
+              <div class="col-md-6">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  name="name"
+                  style={{ marginBottom: 20 }}
+                />
+                <input
+                  type="text"
+                  placeholder="E-mail"
+                  name="mail"
+                  style={{ marginBottom: 20 }}
+                />
+                <input type="text" placeholder="Phone" name="Phone" />
+              </div>
+              <div class="col-md-6">
+                <textarea
+                  type="text"
+                  placeholder="Message"
+                  name="comment"
+                  className="textarea--outline"
+                ></textarea>
                 <input
                   type="submit"
-                  class="btn btn-outline-light"
-                  style={{
-                    borderRadius: "0px",
-                    marginTop: 10,
-                    marginBottom: 10,
-                    width: "35.5%",
-                  }}
+                  class="btn button button--outline"
                   value="Send"
+                  style={{marginRight:10}}
                 />
                 <input
                   type="reset"
-                  class="btn btn-outline-light"
-                  style={{
-                    borderRadius: "0px",
-                    marginLeft: "1%",
-                    marginTop: 10,
-                    marginBottom: 10,
-                    width: "35.5%",
-                  }}
+                  class="btn button button--outline"
                   value="Reset"
                 />
               </div>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
   );

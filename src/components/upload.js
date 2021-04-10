@@ -4,33 +4,26 @@ const Upload = () => {
   return (
     <div>
       <div class="background background--upload"></div>
-      <div class="row-upload-area">
-        <h1
-          style={{
-            textAlign: "center",
-            color: "white",
-            textShadow: "2px 2px 4px #000000",
-          }}
-        >
-          Welcome to Single Syllabus
-        </h1>
-        <br />
-        <br />
+      <div class="centered centered--text">
+        <h1 class="title">Welcome to Single Syllabus</h1>
         <form action="/action_page.php">
           <input
             type="file"
             name="file"
             id="file"
-            class="inputfile btn btn-warning btn-lg"
+            class="input--primary btn btn-lg"
+            style={{ marginTop: "2rem" }}
           />
-
-          <br />
-          <br />
-          <br />
-          <input type="submit" id="submit" class="submit" />
-          <label for="submit" class="btn btn-warning btn-md">
-            submit
-          </label>
+          <div>
+            <input type="submit" id="submit" class="hidden" />
+            <label
+              for="submit"
+              class="btn button button-primary"
+              style={{ marginTop: "2rem" }}
+            >
+              Submit
+            </label>
+          </div>
         </form>
       </div>
     </div>
