@@ -1,5 +1,6 @@
 import React from "react";
-
+import Edit from "./edit";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 const Upload = () => {
   return (
     <div>
@@ -16,13 +17,18 @@ const Upload = () => {
           />
           <div>
             <input type="submit" id="submit" class="hidden" />
-            <label
+            <button
               for="submit"
               class="btn button button-primary"
               style={{ marginTop: "2rem" }}
             >
-              Submit
-            </label>
+              <Link to="/edit">Submit</Link>
+            </button>
+            <Router>
+              <Switch>
+                <Route exact path="/edit" component={Edit}></Route>
+              </Switch>
+            </Router>
           </div>
         </form>
       </div>

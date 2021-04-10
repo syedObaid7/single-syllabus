@@ -14,9 +14,10 @@ const About = () => {
           About Us
         </h1>
         <p className="lead">
-          The Developers are a team of four students from The University of Texas
-          at Dallas. We developed this application for students who want to be
-          organized and stay on top of their classes. Learn more about The Developers below!
+          The Developers are a team of four students from The University of
+          Texas at Dallas. We developed this application for students who want
+          to be organized and stay on top of their classes. Learn more about The
+          Developers below!
         </p>
       </div>
       <div className="card-deck">

@@ -8,6 +8,7 @@ import Contact from "./components/contact";
 import Help from "./components/help";
 import About from "./components/about";
 import Empty from "./components/empty";
+import Edit from "./components/edit";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route component={Help} path="/help" />
             <Route component={About} path="/about" />
             <Route component={Empty} path="/signout" />
+            <Route component={Edit} path="/edit" />
           </div>
         </Switch>
       </Router>

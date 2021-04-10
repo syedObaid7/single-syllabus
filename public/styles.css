@@ -149,8 +149,17 @@ i {
   padding-right: 10px;
 }
 
-.row-login-area {
-  width: 50%;
-  margin-left: 25%;
-  height: 50%;
+/* Edit */
+div[editext="edit-container"] {
+  padding: 15px;
+  border-radius: 5px;
+  color: rgb(243, 0, 0);
+  text-decoration-color: #6293c3;
+}
+
+#edit {
+  float: left;
+}
+#continueB {
+  float: right;
 }
