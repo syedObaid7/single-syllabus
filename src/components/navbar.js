@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
+    <div>
     <nav className="navbar sticky-top navbar-expand-lg navbar-light">
       <a className="navbar-brand" href="/">
         Single Syllabus
@@ -54,12 +55,35 @@ const Navbar = () => {
               </Link>
             </div>
           </li>
-          <Link to="/signout" className="nav-link">
-            Sign Out
-          </Link>
+
+
+<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">
+    Sign Out
+</button>
+
         </ul>
       </div>
     </nav>
+    
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Are you sure you want to sign out?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-footer">
+      <Link to="/" className="btn btn-success"> 
+                Yes
+      </Link>
+      <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
   );
 };
 

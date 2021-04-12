@@ -82,7 +82,7 @@ class Edit extends Component {
 
   render() {
     return (
-      <div class="container">
+      <div className="container">
         <br></br>
         <h3 id="edit">Edit Syllabi</h3>
         <button id="continueB">Continue</button>

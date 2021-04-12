@@ -7,8 +7,8 @@ import Card from "./library/card";
 
 const About = () => {
   return (
-    <div class="centered centered--vertical">
-      <div class="background background--upload"></div>
+    <div className="centered centered--vertical">
+      <div className="background background--upload"></div>
       <div className="jumbotron card--transparent" style={{ width: "80%" }}>
         <h1 className="display-4" style={{ textAlign: "center" }}>
           About Us
