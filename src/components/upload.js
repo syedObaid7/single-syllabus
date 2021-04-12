@@ -22,7 +22,9 @@ const Upload = () => {
               class="btn button button-primary"
               style={{ marginTop: "2rem" }}
             >
-              <Link to="/edit" style={{color:"black"}}>Submit</Link>
+              <Link to="/edit" style={{ color: "black" }}>
+                Submit
+              </Link>
             </button>
             <Router>
               <Switch>
