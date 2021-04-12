@@ -50,7 +50,7 @@ const About = () => {
           name="Syed Quadri"
           location="Dammam, Saudi Arabia"
           interest="Data Science"
-          position="Data Engineer​"
+          position="Data Engineer Intern​"
           funFact="Likes solving puzzles"
         />
       </div>
