@@ -11,7 +11,7 @@ const Contact = () => {
             <i class="far fa-envelope"></i>support@singlesyllabus.com
           </h3>
           <h3 style={{ padding: 10 }}>
-            <i class="fas fa-phone-alt"></i>(123)456-789
+            <i class="fas fa-phone-alt"></i>(123) 456-789
           </h3>
           <hr class="my-4" />
           <form
@@ -46,7 +46,7 @@ const Contact = () => {
                   type="submit"
                   class="btn button button--outline"
                   value="Send"
-                  style={{marginRight:10}}
+                  style={{ marginRight: 10 }}
                 />
                 <input
                   type="reset"
