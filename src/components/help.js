@@ -2,12 +2,12 @@ import React from "react";
 
 const Help = () => {
   return (
-    <div class="centered centered--vertical">
-      <div class="background background--upload "></div>
-      <div class="jumbotron card--transparent" style={{ width: "80%" }}>
+    <div className="centered centered--vertical">
+      <div className="background background--upload "></div>
+      <div className="jumbotron card--transparent" style={{ width: "80%" }}>
         <div>
-          <h1 class="display-4">How does Single Syllabus work?</h1>
-          <hr class="my-4" />
+          <h1 className="display-4">How does Single Syllabus work?</h1>
+          <hr className="my-4" />
           <h2>Simple upload.</h2>
           <p>
             It's simple to create a consolidated syllabus. To start, upload your
@@ -24,7 +24,7 @@ const Help = () => {
             syllabus for future reference, hit "save" on the preview page. Your
             syllabus is then stored in your classes for easy lookup.
           </p>
-          <a class="btn btn-outline-dark btn-lg" href="./contact" role="button">
+          <a className="btn btn-outline-dark btn-lg" href="./contact" role="button">
             Contact us for more questions
           </a>
         </div>
