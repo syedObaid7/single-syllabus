@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
+
 const Navbar = () => {
   return (
     <div>
@@ -75,7 +77,7 @@ const Navbar = () => {
         </button>
       </div>
       <div class="modal-footer">
-      <Link to="/" className="btn btn-success"> 
+      <Link to="/" className="btn btn-success" id = "signout"> 
                 Yes
       </Link>
       <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
