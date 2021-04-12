@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Navbar from "./components/navbar";
 import Login from "./components/login";
+import Classes from "./components/classes";
 import Upload from "./components/upload";
 import Contact from "./components/contact";
 import Help from "./components/help";
@@ -20,7 +21,7 @@ function App() {
           <Route component={Login} exact path="/" />
           <div>
             <Navbar />
-            <Route component={Empty} path="/classes" />
+            <Route component={Classes} path="/classes" />
             <Route component={Upload} path="/upload" />
             <Route component={User} path="/user" />
             <Route component={ChangePass} path="/changepass" />
