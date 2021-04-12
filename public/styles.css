@@ -1,4 +1,206 @@
-<<<<<<< HEAD
+/* Global */
+:root {
+  --color-primary: #fbc219;
+  --color-body: #1b191b;
+  --color-accent: white;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+}
+
+/* Background */
+.background {
+  height: 100%;
+  width: 100%;
+  z-index: -100;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  filter: blur(8px);
+}
+
+.background--login {
+  background: url("https://images.pexels.com/photos/4778611/pexels-photo-4778611.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+  background-size: cover;
+}
+
+.background--upload {
+  background: url("https://cpb-us-e2.wpmucdn.com/sites.utdallas.edu/dist/e/1154/files/2020/09/campus-mall-students-walking.jpg");
+  background-size: cover;
+}
+
+.background--user {
+  background: url("https://cpb-us-e2.wpmucdn.com/sites.utdallas.edu/dist/e/1154/files/2020/09/campus-mall-students-walking.jpg");
+  background-size: cover;
+}
+
+.background--user {
+  background: url("https://cpb-us-e2.wpmucdn.com/sites.utdallas.edu/dist/e/1154/files/2020/09/campus-mall-students-walking.jpg");
+  background-size: cover;
+}
+
+/* Layout */
+.centered {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
+}
+
+.centered--text {
+  text-align: center;
+}
+
+.user--userimage {
+  content: url("https://qph.fs.quoracdn.net/main-qimg-8b4794e1a1ab42908de37f6a691ecc20");
+  width: 35%;
+  height: 35%;
+  border: 2px solid #1d1b1dcc;
+  box-shadow: 1px 1px 3px #201f201f;
+  border-radius: 5px;
+}
+
+.user--align {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 30px;
+  width: 45%;
+}
+
+.user--text {
+  margin-left: 65px;
+  width: 100%;
+}
+
+.user--text input {
+  border: 1px solid black;
+  margin-bottom: 3%;
+}
+
+.user--submit {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.user--change {
+  display: inline-block;
+  width: 100%;
+}
+
+/* Nav */
+nav {
+  background-color: var(--color-primary);
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+/* Cards */
+.card {
+  border: none;
+  background-color: var(--color-accent);
+  padding: 2.5em;
+  border-radius: 5px;
+}
+
+.card--transparent {
+  opacity: 85%;
+}
+
+.card-footer {
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 5px;
+}
+
+.jumbotron {
+  background-color: var(--color-accent);
+  box-shadow: 10px 5px 10px black;
+  border-radius: 5px;
+}
+
+.profile-pic {
+  width: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Buttons */
+.button {
+  border-radius: 5px;
+  height: 35px;
+  padding: 5px;
+  text-transform: uppercase;
+  width: 10rem;
+}
+
+.button-primary {
+  background-color: var(--color-primary);
+}
+
+.button--outline {
+  border-radius: 5px;
+  border: 1px solid var(--color-body);
+}
+
+/* Input */
+.input--primary {
+  background-color: var(--color-primary);
+}
+
+input[type="text"] {
+  border-width: 1px;
+  height: 45px;
+  padding-left: 10px;
+  width: 75%;
+}
+
+textarea {
+  padding: 10px;
+  width: 75%;
+  height: 80%;
+}
+
+.textarea--outline {
+  border: 1px solid var(--color-body);
+}
+
+.hidden {
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+/* Typography */
+.title {
+  color: var(--color-accent);
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+label {
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+i {
+  padding-right: 10px;
+}
+
+/* Edit */
 div[editext="edit-container"] {
   padding: 15px;
   border-radius: 5px;
@@ -12,256 +214,3 @@ div[editext="edit-container"] {
 #continueB {
   float: right;
 }
-
-=======
-nav {
-  margin-bottom: none;
-}
->>>>>>> df0066b27f69b6fa9a9e05aa1365a93f83a2da25
-.upload {
-  margin-top: 10px;
-  width: 40%;
-}
-
-<<<<<<< HEAD
-.inputfile {
-  width: 0.1px;
-  height: 0.1px;
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
-  z-index: -1;
-}
-
-.submit {
-  width: 0.1px;
-  height: 0.1px;
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
-  z-index: -1;
-=======
-.submit {
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
->>>>>>> df0066b27f69b6fa9a9e05aa1365a93f83a2da25
-}
-
-.inputfile + label {
-  font-size: 1.25em;
-  font-weight: 700;
-  color: white;
-  background-color: orange;
-  display: inline-block;
-  width: 30%;
-  max-width: 70%;
-<<<<<<< HEAD
-  border-radius: 20px;
-=======
-  /* corner-radius: 20px; */
->>>>>>> df0066b27f69b6fa9a9e05aa1365a93f83a2da25
-}
-
-.submit + label {
-  font-size: 1.25em;
-  font-weight: 400;
-  color: white;
-  background-color: orange;
-  display: inline-block;
-}
-
-.inputfile + label {
-  cursor: pointer; /* "hand" cursor */
-}
-
-<<<<<<< HEAD
-=======
-:root {
-  --color-primary: #ffd900;
-  --color-body: #1b191b;
-  --color-accent: white;
-}
-
-body {
-  font-family: "Karla", sans-serif;
-}
-
-/* Backgrounds */
-
-.background {
-  height: 100%;
-  width: 100%;
-  z-index: -100;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  filter: blur(8px);
-}
-
-.background--upload {
-  background: url("https://cpb-us-e2.wpmucdn.com/sites.utdallas.edu/dist/e/1154/files/2020/09/campus-mall-students-walking.jpg");
-  background-size: cover;
-}
-
-.background--login {
-  background: url("https://images.pexels.com/photos/965117/pexels-photo-965117.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  background-size: cover;
-}
-
-/* Cards */
-
-.card {
-  border: none;
-  background-color: var(--color-accent);
-  width: 50%;
-  padding: 2.5em;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.card--transparent {
-  opacity: 85%;
-}
-
-/* Buttons */
-
-button,
-.button {
-  text-transform: uppercase;
-  margin-right: 8px;
-}
-
-/* Typography */
-
-.title {
-  color: var(--color-accent);
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-top: 10%;
-  padding: 10px;
-  text-align: center;
-}
-
-label {
-  font-weight: bold;
-}
-
-.row-upload-area {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: 100vh;
-}
-
-.row-login-area {
-  width: 50%;
-  margin-left: 25%;
-  height: 50%;
-}
-
-.about-top {
-  background-color: darkorange;
-  color: white;
-  margin-top: 2em;
-  border-radius: 2em;
-  width: 80%;
-  margin-left: 10%;
-}
-
-.card-footer {
-  background-color: darkorange;
-  color: white;
-}
-
->>>>>>> df0066b27f69b6fa9a9e05aa1365a93f83a2da25
-#onebox {
-  width: auto;
-  height: auto;
-  display: inline-block;
-}
-
-<<<<<<< HEAD
-=======
-.members {
-  text-align: center;
-}
->>>>>>> df0066b27f69b6fa9a9e05aa1365a93f83a2da25
-textarea {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  padding-left: 30px;
-  border-color: white;
-  border-width: 1px;
-  background-color: white;
-<<<<<<< HEAD
-  color: white;
-=======
-  color: black;
->>>>>>> df0066b27f69b6fa9a9e05aa1365a93f83a2da25
-  width: 75%;
-  padding-left: 10px;
-  padding-top: 10px;
-  height: 125px;
-}
-
-input[type="text"] {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  border-color: white;
-  border-width: 1px;
-  background-color: white;
-<<<<<<< HEAD
-  color: white;
-=======
-  color: black;
->>>>>>> df0066b27f69b6fa9a9e05aa1365a93f83a2da25
-  width: 75%;
-  height: 15%;
-  padding: 20px 50px 20px 10px;
-  margin-bottom: 10px;
-}
-<<<<<<< HEAD
-
-.jumbotron {
-  background-color: darkorange;
-  color: white;
-}
-
-.about-top {
-  border-radius: 40px;
-  width: 75%;
-  align-content: center;
-  margin-left: 12.5%;
-  margin-top: 2%;
-  height: 20%;
-}
-
-.members {
-  text-align: center;
-}
-
-.about-top-text {
-  padding-left: 2%;
-  padding-right: 2%;
-}
-
-.card-deck {
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-
-.card {
-  border-color: darkorange;
-}
-
-.card-footer {
-  color: white;
-  background-color: darkorange;
-}
-=======
->>>>>>> df0066b27f69b6fa9a9e05aa1365a93f83a2da25

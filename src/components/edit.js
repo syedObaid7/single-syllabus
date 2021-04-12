@@ -1,4 +1,3 @@
-import { render } from "@testing-library/react";
 import React, { Component } from "react";
 import EdiText from "react-editext";
 
@@ -83,7 +82,7 @@ class Edit extends Component {
 
   render() {
     return (
-      <div class="container">
+      <div className="container">
         <br></br>
         <h3 id="edit">Edit Syllabi</h3>
         <button id="continueB">Continue</button>
