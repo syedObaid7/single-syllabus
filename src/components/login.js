@@ -6,7 +6,7 @@ const Login = () => {
     <div>
       <div className="background background--login"></div>
       <div className="centered">
-        <h1 className="title">Single Syllabus</h1>
+        <h1 className="title" style={{textShadow: "2px 2px 4px #000000"}}>Single Syllabus</h1>
         <div className="card card--transparent">
           <form>
             <FormField

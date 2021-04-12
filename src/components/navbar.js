@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Dropdown from "./library/dropdown";
 
 const Navbar = () => {
   return (
@@ -29,34 +30,21 @@ const Navbar = () => {
           <Link to="/user" className="nav-link">
             User
           </Link>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Help
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <Dropdown
+            displayName="Help"
+            items={[
               <Link to="/help" className="nav-link">
                 How To Use
-              </Link>
+              </Link>,
               <Link to="/contact" className="nav-link">
                 Contact
-              </Link>
-              <div class="dropdown-divider"></div>
+              </Link>,
+              <div className="dropdown-divider"></div>,
               <Link to="/about" className="nav-link">
                 About
-              </Link>
-            </div>
-          </li>
-          <Link to="/signout" className="nav-link">
-            Sign Out
-          </Link>
+              </Link>,
+            ]}
+          />
         </ul>
       </div>
     </nav>
