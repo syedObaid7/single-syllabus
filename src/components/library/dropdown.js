@@ -3,7 +3,7 @@ import React from "react";
 const Dropdown = (props) => {
   return (
     <li className="nav-item dropdown">
-      <a
+      <span
         className="nav-link dropdown-toggle"
         id="navbarDropdown"
         role="button"
@@ -12,7 +12,7 @@ const Dropdown = (props) => {
         aria-expanded="false"
       >
         {props.displayName}
-      </a>
+      </span>
       <div className="dropdown-menu" aria-labelledby="navbarDropdown">
         {props.items}
       </div>

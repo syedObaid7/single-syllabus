@@ -28,11 +28,6 @@ const handleSave = (val) => {
   console.log(setValue);
 };
 
-function storeChanges(item) {
-  console.log(item);
-  // console.log(change);
-}
-
 function SectionList(props) {
   const items = props.items;
   const listItems = items.map((item) => (

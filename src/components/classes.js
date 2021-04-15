@@ -34,13 +34,13 @@ var terms = {
 };
 
 var semesters = [];
-for (var key in terms) {
-  semesters.push(key);
+for (var term in terms) {
+  semesters.push(term);
 }
 
 var sections = [];
-for (var key in terms[Object.keys(terms)[0]]) {
-  sections.push(key);
+for (var section in terms[Object.keys(terms)[0]]) {
+  sections.push(section);
 }
 
 class Classes extends Component {
