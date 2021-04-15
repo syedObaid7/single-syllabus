@@ -140,7 +140,6 @@ def main():
         for filename in os.listdir('PDFS'):
             if filename.endswith(".pdf"): 
 
-                print(filename)
                 document = filename
                 doc = fitz.open(document)
 
