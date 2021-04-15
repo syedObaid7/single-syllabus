@@ -4,6 +4,8 @@ import json
 import re
 from pprint import pprint
 import os
+import sys
+import fnmatch
 
 #CITATION OF CODE:
 #LouisdeBruijn/Medium, (2020) pdf_retrieval.py.  https://github.com/LouisdeBruijn/Medium/blob/master/PDF%20retrieval/pdf_retrieval.py
@@ -134,50 +136,55 @@ def headers_para(doc, size_tag):
 
 def main():
 
-    document = 'SE.pdf'
-    doc = fitz.open(document)
+        
+        for filename in os.listdir('PDFS'):
+            if filename.endswith(".pdf"): 
 
-    font_counts, styles = fonts(doc, granularity=False)
+                print(filename)
+                document = filename
+                doc = fitz.open(document)
 
-    size_tag = font_tags(font_counts, styles)
+                font_counts, styles = fonts(doc, granularity=False)
 
-    elements = headers_para(doc, size_tag)
+                size_tag = font_tags(font_counts, styles)
+
+                elements = headers_para(doc, size_tag)
 
 
-    ###CODE ADDED BY LEONARDO ACIOLI ------------------------------------------
-    #finds headers, cleans them, and outputs to a file
-    listimportant = []
-    listclean = []
+                ###CODE ADDED BY LEONARDO ACIOLI ------------------------------------------
+                #finds headers, cleans them, and outputs to a file
+                listimportant = []
+                listclean = []
 
-    h2 = "<h2>"
-    h3 = "<h3>"
+                h2 = "<h2>"
+                h3 = "<h3>"
 
-    for element in elements:
-        if h2 in element:
-            listimportant.append(element)
-        if h3 in element:
-            listimportant.append(element)
+                for element in elements:
+                    if h2 in element:
+                        listimportant.append(element)
+                    if h3 in element:
+                        listimportant.append(element)
 
-    for string in listimportant:
-        if h2 in string:
-            string = string.replace("<h2>","")
-            string = string.replace("|","")
-            listclean.append(string)
-        else:
-            string = string.replace("<h3>","")
-            string = string.replace("|","")
-            listclean.append(string)
+                for string in listimportant:
+                    if h2 in string:
+                        string = string.replace("<h2>","")
+                        string = string.replace("|","")
+                        listclean.append(string)
+                    else:
+                        string = string.replace("<h3>","")
+                        string = string.replace("|","")
+                        listclean.append(string)
 
-    pprint(listclean)
+                pprint(listclean)
 
-    sourceFile = open('out.json', 'w')
-    print("Class: " + os.path.basename(document),file=sourceFile)
-    print("\n",file=sourceFile)
-    with open('out.json', 'wt') as out:
-        pprint(listclean, stream=out)
-    sourceFile.close()  
-    out.close()
-    
+                sourceFile = open('out.json', 'w')
+                print("Class: " + os.path.basename(document),file=sourceFile)
+                print("\n",file=sourceFile)
+                with open('out.json', 'wt') as out:
+                    pprint(listclean, stream=out)
+                sourceFile.close()  
+                out.close()
+            
 
 ###CODE ADDED BY LEONARDO ACIOLI ------------------------------------------
 
