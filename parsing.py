@@ -177,6 +177,7 @@ def main():
         pprint(listclean, stream=out)
     sourceFile.close()  
     out.close()
+    
 
 ###CODE ADDED BY LEONARDO ACIOLI ------------------------------------------
 
