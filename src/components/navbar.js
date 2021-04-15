@@ -34,22 +34,22 @@ const Navbar = () => {
             <Dropdown
               displayName="Help"
               items={
-                ((
+                [
                   <Link to="/help" className="nav-link">
                     How To Use
                   </Link>
-                ),
-                (
+                ,
+                
                   <Link to="/contact" className="nav-link">
                     Contact
                   </Link>
-                ),
-                (<div class="dropdown-divider"></div>),
-                (
+                ,
+                <div class="dropdown-divider"></div>,
+                
                   <Link to="/about" className="nav-link">
                     About
                   </Link>
-                ))
+                ]
               }
             />
             <button
