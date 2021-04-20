@@ -1,6 +1,5 @@
 import os
 from flask import Flask,render_template,request
-import parsing
 
 __author__ = 'LeonardoAcioli'
 
@@ -9,8 +8,8 @@ app = Flask(__name__)
 APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 @app.route ("/")
-def index()
-   return render_template("upload.html")
+def index():
+   return render_template ("/upload.html")
 
 @app.route('/upload',methods=['POST'])
 def upload():
@@ -28,7 +27,6 @@ def upload():
       file.save(destination)
 
    return render_template("complete.html")   
-
 
 
 if __name__ == '__main__':
