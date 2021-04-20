@@ -6,6 +6,9 @@ from pprint import pprint
 import os
 import sys
 import fnmatch
+from os import listdir
+from os.path import isfile, join
+
 
 #CITATION OF CODE:
 #LouisdeBruijn/Medium, (2020) pdf_retrieval.py.  https://github.com/LouisdeBruijn/Medium/blob/master/PDF%20retrieval/pdf_retrieval.py
@@ -136,53 +139,58 @@ def headers_para(doc, size_tag):
 
 def main():
 
-        
-        for filename in os.listdir('PDFS'):
-            if filename.endswith(".pdf"): 
+        #CODE ADDED BY LEONARDO ACIOLI AT APRIL 4TH 2021
+        #LINES 144-149 ensures that one can run a loop through the directory.
+        #WARNING, fitz does not like paths as variables, had to put the variable within explicit string. AKA {document}
+        from os.path import isfile, join
+        files = [file for file in listdir('PDFS') if isfile(join('PDFS', file))]
 
-                document = filename
-                doc = fitz.open(document)
+        for file in files:
+            document = file
+            doc = fitz.open(f'PDFS/{document}')
+            print(document)
 
-                font_counts, styles = fonts(doc, granularity=False)
+            font_counts, styles = fonts(doc, granularity=False)
 
-                size_tag = font_tags(font_counts, styles)
+            size_tag = font_tags(font_counts, styles)
 
-                elements = headers_para(doc, size_tag)
+            elements = headers_para(doc, size_tag)
 
 
-                ###CODE ADDED BY LEONARDO ACIOLI ------------------------------------------
-                #finds headers, cleans them, and outputs to a file
-                listimportant = []
-                listclean = []
+            ###CODE ADDED BY LEONARDO ACIOLI ------------------------------------------
+            #finds headers, cleans them, and outputs to a file
+            listimportant = []
+            listclean = []
 
-                h2 = "<h2>"
-                h3 = "<h3>"
+            h2 = "<h2>"
+            h3 = "<h3>"
 
-                for element in elements:
-                    if h2 in element:
-                        listimportant.append(element)
-                    if h3 in element:
-                        listimportant.append(element)
+            for element in elements:
+                if h2 in element:
+                    listimportant.append(element)
+                if h3 in element:
+                    listimportant.append(element)
 
-                for string in listimportant:
-                    if h2 in string:
-                        string = string.replace("<h2>","")
-                        string = string.replace("|","")
-                        listclean.append(string)
-                    else:
-                        string = string.replace("<h3>","")
-                        string = string.replace("|","")
-                        listclean.append(string)
+            for string in listimportant:
+                if h2 in string:
+                    string = string.replace("<h2>","")
+                    string = string.replace("|","")
+                    listclean.append(string)
+                else:
+                    string = string.replace("<h3>","")
+                    string = string.replace("|","")
+                    listclean.append(string)
 
-                pprint(listclean)
+            pprint(listclean)
 
-                sourceFile = open('out.json', 'w')
-                print("Class: " + os.path.basename(document),file=sourceFile)
-                print("\n",file=sourceFile)
-                with open('out.json', 'wt') as out:
-                    pprint(listclean, stream=out)
-                sourceFile.close()  
-                out.close()
+            with open('out.json', 'a') as out1:
+                print("Class: " + os.path.basename(document),file=out1)
+                out1.close()
+            with open('out.json', 'a') as out2:
+                print("\n",file=out2)
+                pprint(listclean, stream=out2)
+                print("\n",file=out2)
+                out2.close()
             
 
 ###CODE ADDED BY LEONARDO ACIOLI ------------------------------------------
