@@ -1,5 +1,5 @@
 import os
-from flask import Flask,render_template,request
+from flask import Flask, render_template, request, session
 import parsing
 
 __author__ = 'LeonardoAcioli'
@@ -8,29 +8,28 @@ app = Flask(__name__)
 
 APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 
-@app.route ("/")
-def index()
-   return render_template("upload.html")
-
-@app.route('/upload',methods=['POST'])
+@app.route('/upload', methods=['POST'])
 def upload():
-   target = os.path.join(APP_ROOT, 'PDFS/')
-   print(target)
+    target = os.path.join(APP_ROOT, 'PDFS/')
+    print("TARGET: " + target)
 
-   if not os.path.isdir(target):
-      os.mkdir(target)
+    if not os.path.isdir(target):
+        os.mkdir(target)
 
-   for file in request.files.getlist("file"):
-      print(file)
-      filename = file.filename
-      destination = "/".join([target, filename])
-      print(destination)
-      file.save(destination)
+    for file in request.files.getlist("file"):
+        filename = file.filename
+        print("FILE: " + filename)
+        destination = "/".join([target, filename])
+        print("DESTINATION" + destination)
+        file.save(destination)
+        session['uploadFilePath'] = destination
 
-   return render_template("complete.html")   
+    parsing.main()
 
+    return "Succeeded"
 
 
 if __name__ == '__main__':
-   app.debug = True
-   app.run(host = '0.0.0.0', port = 5000)
+    app.secret_key = os.urandom(24)
+    app.debug = True
+    app.run(host='0.0.0.0', port=5000)
