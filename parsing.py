@@ -158,6 +158,7 @@ def main():
 
             pprint(elements)
 
+
             ###CODE ADDED BY LEONARDO ACIOLI ------------------------------------------
             #finds headers, cleans them, and outputs to a file
             listimportant = []
