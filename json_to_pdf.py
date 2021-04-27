@@ -1,3 +1,5 @@
+#Code by LeonardoAcioli // 4/27/2021
+
 from fpdf import FPDF
 import numpy
 import json
