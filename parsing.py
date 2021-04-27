@@ -8,6 +8,7 @@ import sys
 import fnmatch
 from os import listdir
 from os.path import isfile, join
+import json_to_pdf
 
 
 #CITATION OF CODE:
@@ -193,7 +194,8 @@ def main():
                 pprint(listclean, stream=out2)
                 print("\n",file=out2)
                 out2.close()
-            
+
+        json_to_pdf.main()   
 
 ###CODE ADDED BY LEONARDO ACIOLI ------------------------------------------
 
