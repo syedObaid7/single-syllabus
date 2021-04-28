@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import EdiText from "react-editext";
+import Preview from "./preview";
+import Test from "./preview";
+import User from "./user";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 var classes = {
   "Software Engineering": {
@@ -80,7 +84,22 @@ class Edit extends Component {
       <div className="container">
         <br></br>
         <h3 id="edit">Edit Syllabi</h3>
-        <button id="continueB">Continue</button>
+        <div>
+          <button
+            for="continue"
+            class="btn button button-primary"
+            style={{ marginLeft: "70%" }}
+          >
+            <Link to="/preview" style={{ color: "black" }}>
+              Continue
+            </Link>
+          </button>
+          <Router>
+            <Switch>
+              <Route exact path="/preview" component={Preview}></Route>
+            </Switch>
+          </Router>
+        </div>
         <br></br>
         <br></br>
         <br></br>

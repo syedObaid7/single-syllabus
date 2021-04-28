@@ -12,6 +12,7 @@ import Empty from "./components/empty";
 import Edit from "./components/edit";
 import User from "./components/user";
 import ChangePass from "./components/changepass";
+import Preview from "./components/preview";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route component={About} path="/about" />
             <Route component={Empty} path="/signout" />
             <Route component={Edit} path="/edit" />
+            <Route component={Preview} path="/preview" />
           </div>
         </Switch>
       </Router>
